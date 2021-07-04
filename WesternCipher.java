@@ -283,14 +283,14 @@ public class WesternCipher {
 	    System.out.println(operation);
 	    while (!operation.equals("no")) {
 	    	if (operation.equals("encode")) {
-	    	    System.out.println("Enter the en string.");
-	    	    String input = scan.nextLine();
+	    	    System.out.println("Enter the encode string.");
+	    	    String input = scan.nextLine().toUpperCase();
 	    	    System.out.println(wc.encode(input));
 	    	    System.out.println("Operation completed. Do you want to encode or decode a string? Enter no to exit.");
 	    	    operation = scan.nextLine();
 	    	}else if (operation.equals("decode")) {
-	    		System.out.println("Enter the de string.");
-	    	    String input = scan.nextLine();
+	    	    System.out.println("Enter the decode string.");
+	    	    String input = scan.nextLine().toUpperCase();
 	    	    System.out.println(wc.decode(input));
 	    	    System.out.println("Operation completed. Do you want to encode or decode a string? Enter no to exit.");
 	    	    operation = scan.nextLine();
